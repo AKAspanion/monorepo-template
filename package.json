@@ -1,20 +1,24 @@
 {
-  "name": "monorepo-template",
   "private": true,
   "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
-    "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "build": "turbo run build",
+    "clean": "turbo run clean",
+    "dev": "turbo run dev",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
     "prettier": "^3.2.5",
     "turbo": "latest"
   },
-  "packageManager": "pnpm@8.9.0",
   "engines": {
     "node": ">=18"
-  }
+  },
+  "packageManager": "yarn@1.22.19",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
 }
