@@ -49,6 +49,14 @@
   place-items: center;
 }
 
+.heroButton {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  place-items: center;
+}
+
 .heroContent {
   display: flex;
   position: relative;
