@@ -10,6 +10,9 @@
   "files": [
     "dist/**"
   ],
+  "exports": {
+    ".": "./src/index.tsx"
+  },
   "scripts": {
     "build": "tsup",
     "clean": "rm -rf dist",

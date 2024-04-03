@@ -1,20 +1,25 @@
 import { log } from "@repo/logger";
 import { CounterButton, Link } from "@repo/ui";
+import { add } from "@repo/utils";
 
 export const metadata = {
-  title: "Store | Kitchen Sink",
+  title: "App | Kitchen Sink",
 };
 
-export default function Store(): JSX.Element {
-  log("Hey! This is the Store page.");
+export default function App(): JSX.Element {
+  log("Hey! This is the App page.");
 
   return (
     <div className="container">
       <h1 className="title">
-        Store <br />
+        App <br />
         <span>Kitchen Sink</span>
       </h1>
-      <CounterButton />
+      <div>
+        <div>This calculation is using utils. 10+20 = {add(10, 20)}</div>
+        <br />
+        <CounterButton />
+      </div>
       <p className="description">
         Built With{" "}
         <Link href="https://turbo.build/repo" newTab>

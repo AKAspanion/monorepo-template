@@ -1,15 +1,22 @@
+import { log } from "@repo/logger";
 import React from "react";
 import "./styles.css";
 import { CounterButton, Link } from "@repo/ui";
+import { add } from "@repo/utils";
 
-function App(): JSX.Element {
+function Admin(): JSX.Element {
+  log("Hey! This is the Admin page.");
   return (
     <div className="container">
       <h1 className="title">
         Admin <br />
         <span>Kitchen Sink</span>
       </h1>
-      <CounterButton />
+      <div>
+        <div>This calculation is using utils. 10+20 = {add(10, 20)}</div>
+        <br />
+        <CounterButton />
+      </div>
       <p className="description">
         Built With{" "}
         <Link href="https://turbo.build/repo" newTab>
@@ -24,4 +31,4 @@ function App(): JSX.Element {
   );
 }
 
-export default App;
+export default Admin;

@@ -1,0 +1,28 @@
+{
+  "name": "@repo/utils",
+  "version": "0.0.7",
+  "description": "Collection of reusable utilities used regularly.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "tsc": "tsc",
+    "format": "prettier --write .",
+    "dev": "rimraf lib && tsup --watch",
+    "build": "rimraf dist && env NODE_ENV=production tsup",
+    "build:watch": "tsup --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "rimraf": "^5.0.5",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.3"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  }
+}
