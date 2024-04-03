@@ -12,7 +12,6 @@ This repo includes the following packages and apps:
 - `@repo/config-eslint`: ESLint configurations used throughout the monorepo
 - `@repo/config-typescript`: tsconfig.json's used throughout the monorepo
 - `@repo/jest-presets`: Jest configurations
-- `@repo/logger`: isomorphic logger (a small wrapper around console.log)
 - `@repo/ui`: a dummy React UI library (which contains `<CounterButton>` and `<Link>` components)
 - `@repo/utils`: all utility functions goes here
 

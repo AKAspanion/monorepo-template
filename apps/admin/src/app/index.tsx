@@ -1,8 +1,7 @@
-import { log } from "@repo/logger";
 import React from "react";
 import "./styles.css";
 import { CounterButton, Link } from "@repo/ui";
-import { add } from "@repo/utils";
+import { add, log } from "@repo/utils";
 
 function Admin(): JSX.Element {
   log("Hey! This is the Admin page.");

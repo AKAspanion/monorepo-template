@@ -1,8 +1,8 @@
-import { log } from "..";
+import { log } from "../log";
 
 jest.spyOn(global.console, "log");
 
-describe("@repo/logger", () => {
+describe("logger", () => {
   it("prints a message", () => {
     log("hello");
     // eslint-disable-next-line no-console -- testing console
