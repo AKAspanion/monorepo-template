@@ -9,7 +9,7 @@
     "clean": "rm -rf dist",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src/",
-    "test": "jest --detectOpenHandles"
+    "test": "jest"
   },
   "jest": {
     "preset": "@repo/jest-presets/node"
@@ -37,6 +37,6 @@
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
     "tsup": "^8.0.2",
-    "typescript": "^5.4.3"
+    "typescript": "5.3.3"
   }
 }

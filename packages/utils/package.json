@@ -1,7 +1,8 @@
 {
   "name": "@repo/utils",
-  "version": "0.0.7",
-  "description": "Collection of reusable utilities used regularly.",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Collection of reusable utilities.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -10,19 +11,35 @@
     "format": "prettier --write .",
     "dev": "rimraf lib && tsup --watch",
     "build": "rimraf dist && env NODE_ENV=production tsup",
-    "build:watch": "tsup --watch"
+    "build:watch": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src/",
+    "test": "jest",
+    "prepack": "clean-package",
+    "postpack": "clean-package restore"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "jest": {
+    "preset": "@repo/jest-presets/browser"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "prettier": "^3.2.5",
     "rimraf": "^5.0.5",
     "tsup": "^8.0.2",
-    "typescript": "^5.4.3"
+    "typescript": "5.3.3"
   },
-  "exports": {
-    ".": "./src/index.ts"
+  "clean-package": {
+    "remove": [
+      "jest",
+      "scripts",
+      "exports",
+      "devDependencies"
+    ]
   }
 }

@@ -3,7 +3,9 @@ module.exports = {
   testEnvironment: "jsdom",
   transform: {
     "^.+\\.tsx?$": "ts-jest",
+    "^.+\\.ts?$": "ts-jest",
   },
+  setupFilesAfterEnv: ["<rootDir>/setup-tests.ts"],
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
   modulePathIgnorePatterns: [
     "<rootDir>/test/__fixtures__",
