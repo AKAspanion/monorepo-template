@@ -12,6 +12,7 @@
     "dev": "rimraf lib && tsup --watch",
     "build": "rimraf dist && env NODE_ENV=production tsup",
     "build:watch": "tsup --watch",
+    "clean": "rm -rf dist",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src/",
     "test": "jest",
@@ -27,7 +28,6 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
     "prettier": "^3.2.5",
     "rimraf": "^5.0.5",

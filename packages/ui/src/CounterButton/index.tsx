@@ -22,7 +22,7 @@ export function CounterButton(): JSX.Element {
             borderRadius: "0.25rem",
           }}
         >
-          ui
+          <span>ui</span>
         </code>
       </p>
       <div>
@@ -41,7 +41,7 @@ export function CounterButton(): JSX.Element {
           }}
           type="button"
         >
-          Count: {count}
+          <span>Count: {count}</span>
         </button>
       </div>
     </div>

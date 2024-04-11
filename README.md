@@ -9,6 +9,7 @@ This repo includes the following packages and apps:
 - `api`: an [Express](https://expressjs.com/) server
 - `app`: a [Next.js](https://nextjs.org/) app
 - `admin`: a [Vite](https://vitejs.dev/) single page app
+- `native`: a [React Native](https://reactnative.dev/) with expo-router app
 - `@repo/config-eslint`: ESLint configurations used throughout the monorepo
 - `@repo/config-typescript`: tsconfig.json's used throughout the monorepo
 - `@repo/jest-presets`: Jest configurations
@@ -16,6 +17,10 @@ This repo includes the following packages and apps:
 - `@repo/utils`: all utility functions goes here
 
 Each package and app is 100% [TypeScript](https://www.typescriptlang.org/).
+
+### Removing extra apps
+
+If any of the above apps is not required, you can just delete it and run yarn again.
 
 ### Utilities
 

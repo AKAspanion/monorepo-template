@@ -8,5 +8,8 @@ dist-ssr
 *.local
 .env
 .cache
+.yarn/cache
 server/dist
 public/dist
+ios
+android
